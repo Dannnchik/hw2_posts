@@ -1,0 +1,22 @@
+<!-- myapp/templates/my_template.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример HTML шаблона</title>
+</head>
+<body>
+    <h1>Добро пожаловать в HTML-шаблон!</h1>
+    <p>Это пример HTML-страницы, возвращаемой из Django.</p>
+</body>
+</html>\
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Добро пожаловать в HTML-шаблон!</h1>
+<p>Это пример HTML-страницы с подключенным Bootstrap.</p>
+{% endblock %}
+
+
+
